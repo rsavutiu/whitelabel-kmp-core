@@ -13,5 +13,5 @@ interface ItemGrouper<T : DisplayableItem> {
         items: List<T>,
         repository: ItemRepository<T>,
         languageCode: String
-    ): List<ItemGroup>
+    ): List<ItemGroup<T>>
 }

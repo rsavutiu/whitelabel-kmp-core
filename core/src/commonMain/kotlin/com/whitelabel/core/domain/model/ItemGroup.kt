@@ -3,10 +3,10 @@ package com.whitelabel.core.domain.model
 /**
  * A group of items with a display name (e.g., grouped by country, artist, era).
  */
-data class ItemGroup(
+data class ItemGroup<out T : DisplayableItem>(
     val key: String,
     val displayName: String,
-    val items: List<DisplayableItem>
+    val items: List<T>
 )
 
 /**
